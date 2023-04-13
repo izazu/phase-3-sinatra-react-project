@@ -1,4 +1,6 @@
 require_relative "./config/environment"
+require './app.rb'
+run Sinatra::Application
 
 # Allow CORS (Cross-Origin Resource Sharing) requests
 use Rack::Cors do
