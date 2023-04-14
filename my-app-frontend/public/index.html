@@ -39,9 +39,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <!-- HTML for black and white toggle -->
-   <label for="bw-toggle">Black & White</label>
-   <input type="checkbox" id="bw-toggle">
+   <!-- In your blog post view template -->
+<!-- Add the necessary FontAwesome icons and replace the share URLs with the appropriate URLs for each social media platform -->
+ <ul class="social-share">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=<%= request.original_url %>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+  <li><a href="https://twitter.com/share?url=<%= request.original_url %>" target="_blank"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="https://www.linkedin.com/shareArticle?url=<%= request.original_url %>" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+</ul>
 
   
   </body>

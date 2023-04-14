@@ -36,9 +36,4 @@
     transform: rotate(360deg);
   }
 }
-/* CSS for black and white mode */
-.black-and-white {
-  /* Add styles to convert the app to black and white */
-  /* For example: */
-  filter: grayscale(100%);
-}
+@import "fontawesome";
