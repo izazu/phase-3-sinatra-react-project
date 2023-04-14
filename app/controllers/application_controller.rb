@@ -9,21 +9,21 @@ class ApplicationController < Sinatra::Base
     { message: 'Welcome to Blog App for Writers!' }.to_json
   end
 
-  # Example route for getting all users
+  
   get '/users' do
     content_type :json
     users = User.all
     users.to_json
   end
 
-  # Example route for getting a specific user by ID
+  
   get '/users/:id' do
     content_type :json
     user = User.find(params[:id])
     user.to_json
   end
 
-  # Example route for creating a new user
+  
   post '/users' do
     content_type :json
     user = User.new(params[:user])
@@ -34,7 +34,7 @@ class ApplicationController < Sinatra::Base
     end
   end
 
-  # Example route for updating a user by ID
+  
   put '/users/:id' do
     content_type :json
     user = User.find(params[:id])
@@ -45,7 +45,7 @@ class ApplicationController < Sinatra::Base
     end
   end
 
-  # Example route for deleting a user by ID
+  
   delete '/users/:id' do
     content_type :json
     user = User.find(params[:id])
@@ -56,21 +56,21 @@ class ApplicationController < Sinatra::Base
     end
   end
 
-  # Example route for getting all posts
+  
   get '/posts' do
     content_type :json
     posts = Post.all
     posts.to_json
   end
 
-  # Example route for getting a specific post by ID
+  
   get '/posts/:id' do
     content_type :json
     post = Post.find(params[:id])
     post.to_json
   end
 
-  # Example route for creating a new post
+  
   post '/posts' do
     content_type :json
     post = Post.new(params[:post])
@@ -81,7 +81,7 @@ class ApplicationController < Sinatra::Base
     end
   end
 
-  # Example route for updating a post by ID
+  
   put '/posts/:id' do
     content_type :json
     post = Post.find(params[:id])
@@ -92,7 +92,7 @@ class ApplicationController < Sinatra::Base
     end
   end
 
-  # Example route for deleting a post by ID
+  
   delete '/posts/:id' do
     content_type :json
     post = Post.find(params[:id])
