@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PostList from './PostList';
 import PostForm from './PostForm';
+import $ from 'jquery';
 import './App.css';
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
   }, []);
 
 // JavaScript/jQuery for black and white toggle
-$(document).ready(function() {
+  $(document).ready(function() {
   // Get the toggle switch element
   var bwToggle = $('#bw-toggle');
 
